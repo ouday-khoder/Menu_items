@@ -1,73 +1,52 @@
-import image1 from '../Assets/istockphoto-1439437315-1024x1024.jpg';
-import image2 from '../Assets/istockphoto-1441196959-1024x1024.jpg';
-import image3 from '../Assets/istockphoto-1551381085-1024x1024.jpg';
-import image4 from '../Assets/istockphoto-96430985-1024x1024.jpg';
 
-const randomDescriptions = [
-    "I'm a baby woke mlkshk wolf bitter live edge blue bottle",
-    "Freshly brewed coffee on a rainy day, with bitter chocolate vibes",
-    "A warm breeze on a sandy beach, and life feels light and sweet",
-    "An electric pulse through the city streets, vibrant and uncontained",
-    "Soft waves lapping at the shore, as a cool mist hangs in the air",
-    "Crisp autumn air, fallen leaves crunch underfoot, bittersweet nostalgia",
-    "A whirlwind of flavors, tangy and sweet, wrapped in golden moments",
-    "Dreams of lavender fields and honey skies, gently soothing the soul"
-];
-
-const getRandomDescription = () => {
-    const randomIndex = Math.floor(Math.random() * randomDescriptions.length);
-    return randomDescriptions[randomIndex];
-};
+import image1 from '../Assets/french-toast-COMP.webp';
+import image2 from '../Assets/burger.jpg';
+import image3 from '../Assets/lava cake.webp';
+import image4 from '../Assets/birthdayCake.webp';
+import image5 from '../Assets/tropical mango.jpg';
 
 const Items = [
     {
         id: 1,
-        title: 'ButterMilk Pancakes',
+        title: 'Classic French Toast',
         category: 'breakfast',
-        price: 15.99,
-        image: image2,
-        desc: getRandomDescription(),
+        price: 12.99,
+        image: image1,
+        desc: 'Golden French toast served with fresh berries and maple syrup.',
     },
     {
         id: 2,
-        title: 'Godzilla Milkshake',
+        title: 'Ultimate Veggie Burger',
         category: 'launch',
-        price: 7.99,
-        image: image1,
-        desc: getRandomDescription(),
+        price: 9.99,
+        image: image2,
+        desc: 'A plant-based patty packed with flavor, served with fries.',
     },
     {
         id: 3,
-        title: 'Dinner Double',
+        title: 'Choco Lava Cake',
         category: 'dessert',
-        price: 13.99,
+        price: 11.99,
         image: image3,
-        desc: getRandomDescription(),
+        desc: 'Warm, gooey chocolate cake with a molten center, served with ice cream.',
     },
     {
         id: 4,
-        title: 'Country Delight',
+        title: 'Birthday Cake',
         category: 'birthday',
-        price: 20.99,
+        price: 8.99,
         image: image4,
-        desc: getRandomDescription(),
+        desc: 'A decadent chocolate birthday cake with a smooth, rich frosting, covered in rainbow sprinkles and topped with bright',
     },
     {
         id: 5,
-        title: 'Delight',
+        title: 'Tropical Delight',
         category: 'Delight',
-        price: 30.99,
-        image: image4,
-        desc: getRandomDescription(),
-    },
-    {
-        id: 6,
-        title: 'Product6',
-        category: 'product6',
-        price: 40.99,
-        image: image4,
-        desc: getRandomDescription(),
+        price: 18.99,
+        image: image5,
+        desc: 'A tropical fruit platter with coconut shavings and mint.',
     },
 ];
+
 
 export default Items;
